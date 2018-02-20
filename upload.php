@@ -17,8 +17,8 @@ if(isset($_FILES['video_file'])){
 
 		if(in_array($_FILES['video_file']['type'], $allowedTypeArr)){
 		    if(move_uploaded_file($_FILES['video_file']['tmp_name'], $file_path)){
-		    	$apiKey = "d00e6b489f1e589e01f2";
-				$apiSecret = "827081dd9ee05af92feaf595f00ad1980f9480ce";
+		    	$apiKey = "your_api_key";
+				$apiSecret = "your_api_secret";
 
 				$videotitle = $title;
 				$videocategory = "Category of the video";
@@ -32,8 +32,8 @@ if(isset($_FILES['video_file'])){
 						$apiKey, 
 						$apiSecret, 
 						array('write','delete'), array(
-							'username' => "joao.neto.ninja@gmail.com", 
-							'password' => "@detentos123"
+							'username' => "your_email", 
+							'password' => "your_password"
 						)
 					);
 					$url = $api->uploadFile($file_path);
