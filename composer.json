@@ -1,0 +1,6 @@
+{
+    "require": {
+        "dailymotion/sdk": "^1.6",
+        "twbs/bootstrap": "^4.0"
+    }
+}
